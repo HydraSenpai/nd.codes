@@ -147,4 +147,24 @@ const Wrapper = styled.section`
     color: #b3b3b3;
     transform: scale(1.1);
   }
+  @media (max-width: 1100px) {
+    .card {
+      height: 80%;
+    }
+    .sections {
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact {
+      width: 60%;
+      text-align: center;
+    }
+    .inputs {
+      width: 80%;
+      align-items: center;
+    }
+    .links {
+      justify-content: center;
+    }
+  }
 `;

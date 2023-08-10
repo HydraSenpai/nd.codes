@@ -56,7 +56,9 @@ const Wrapper = styled.section`
     width: 50%;
     height: 65%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 100px;
     grid-row-gap: 50px;
@@ -97,6 +99,38 @@ const Wrapper = styled.section`
   }
   .card2 {
     grid-area: 2 / 2 / 3 / 3;
+  }
+  @media (max-width: 950px) {
+    .container {
+      width: 60%;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+    .container::-webkit-scrollbar {
+      width: 1em;
+    }
+    .container::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .container::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+    }
+    .class-title {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .card1 {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    .card2 {
+      grid-area: 3 / 1 / 4 / 2;
+    }
   }
 `;
 

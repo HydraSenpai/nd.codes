@@ -7,7 +7,9 @@ const About = () => {
     <Wrapper id='about'>
       <div className='card'>
         <div className='sections'>
-          <img src={beach} className='profile' />
+          <div className='image'>
+            <img src={beach} className='profile' />
+          </div>
           <div className='text'>
             <h2 className='title'>About Me</h2>
             <p>
@@ -47,23 +49,85 @@ const Wrapper = styled.section`
     border-radius: 50px;
   }
   .sections {
-    display: flex;
+    display: grid;
+    align-items: start;
+    justify-content: start;
+    grid-template-columns: 30% 1fr;
+    grid-column-gap: 80px;
     padding: 3em;
-    gap: 8%;
   }
   .profile {
-    border-radius: 20px;
-    width: 100%;
     height: 100%;
-    max-height: 505px;
   }
   .text {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    width: 100%;
   }
   .text > p {
     font-size: 1.5em;
     font-weight: 200;
+  }
+
+  @media (max-width: 1600px) {
+    .card {
+      width: 70%;
+    }
+    .sections {
+      grid-template-columns: 30% 1fr;
+    }
+    .profile {
+      width: 300px;
+      height: auto;
+    }
+    .text > p {
+      font-size: 1.4em;
+    }
+  }
+  @media (max-width: 1450px) {
+    .card {
+      height: 52%;
+    }
+    .sections {
+      grid-template-columns: 200px 1fr;
+    }
+    .profile {
+      width: 250px;
+      height: auto;
+    }
+    .text > p {
+      font-size: 1.3em;
+    }
+  }
+  @media (max-width: 1200px) {
+    .card {
+      width: 85%;
+      height: 50%;
+    }
+    .sections {
+      grid-template-columns: 150px 1fr;
+    }
+    .profile {
+      width: 200px;
+      height: auto;
+    }
+    .text > p {
+      font-size: 1.3em;
+    }
+  }
+  @media (max-width: 900px) {
+    .card {
+      height: 90%;
+      width: 80%;
+    }
+    .sections {
+      display: grid;
+      /* justify-content: center; */
+      align-items: center;
+      grid-template-columns: 1fr;
+      grid-column-gap: 80px;
+      padding: 3em;
+    }
   }
 `;

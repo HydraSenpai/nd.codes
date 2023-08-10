@@ -60,4 +60,12 @@ const Wrapper = styled.div`
     color: #b3b3b3;
     transform: scale(1.1);
   }
+  @media (max-width: 950px) {
+    .links {
+      gap: 3em;
+    }
+    .link {
+      font-size: 1.5em;
+    }
+  }
 `;
