@@ -19,8 +19,12 @@ const Landing = () => {
           </h4>
           <div className='findme'>Find me:</div>
           <div className='buttons'>
-            <button className='button'>Download CV</button>
-            <button className='button'>Email Me</button>
+            <a href='#' className='button'>
+              Download CV
+            </a>
+            <a href='#' className='button'>
+              Email Me
+            </a>
           </div>
         </div>
         <img src={pic} className='profile' />
@@ -92,7 +96,6 @@ const Wrapper = styled.section`
     font-size: 25px;
     width: 200px;
     height: 57px;
-    padding: 0.75em 1em;
     border: none;
     border-radius: 10px;
     color: white;

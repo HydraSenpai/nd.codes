@@ -18,7 +18,12 @@ const Projects = () => {
               informative way.
             </p>
             <p>Language: React + NodeJs</p>
-            <button className='btn'>More Details</button>
+            <a
+              href='https://github.com/HydraSenpai/Classessment'
+              className='btn'
+            >
+              Git page
+            </a>
           </div>
         </div>
         <div className='card card2'>
@@ -29,7 +34,9 @@ const Projects = () => {
               This is my personal portfolio website built in React.
             </p>
             <p>Language: React</p>
-            <button className='btn'>More Details</button>
+            <a href='https://github.com/HydraSenpai/nd.codes' className='btn'>
+              Git Page
+            </a>
           </div>
         </div>
       </div>
