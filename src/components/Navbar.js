@@ -61,11 +61,40 @@ const Wrapper = styled.div`
     transform: scale(1.1);
   }
   @media (max-width: 950px) {
+    h1 {
+      font-size: 2.25em;
+    }
     .links {
       gap: 3em;
+      margin-right: 3em;
     }
     .link {
       font-size: 1.5em;
+    }
+  }
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 2em;
+    }
+    .links {
+      gap: 2em;
+      margin-right: 2em;
+    }
+    .link {
+      font-size: 1.2em;
+    }
+  }
+  @media (max-width: 600px) {
+    h1 {
+      margin-left: 0.5em;
+      font-size: 1.5em;
+    }
+    .links {
+      gap: 0.5em;
+      margin-right: 1.5em;
+    }
+    .link {
+      font-size: 1.1em;
     }
   }
 `;

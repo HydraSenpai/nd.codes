@@ -58,6 +58,7 @@ const Wrapper = styled.section`
   }
   .profile {
     height: 100%;
+    max-height: 500px;
   }
   .text {
     display: flex;
@@ -128,6 +129,46 @@ const Wrapper = styled.section`
       grid-template-columns: 1fr;
       grid-column-gap: 80px;
       padding: 3em;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 600px) {
+    .sections {
+      padding: 2em;
+    }
+    .text > p {
+      font-size: 1.2em;
+    }
+    .text {
+      align-items: center;
+    }
+    .image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media (max-width: 450px) {
+    .card {
+      width: 85%;
+    }
+    .profile {
+      height: 250px;
+      width: 180px;
+    }
+    .sections {
+      padding: 2em;
+    }
+    .text {
+      gap: 0.5em;
+    }
+    .text > p {
+      font-size: 1.1em;
+    }
+    .title {
+      font-size: 2.1em;
+      margin-top: 0.25em;
     }
   }
 `;

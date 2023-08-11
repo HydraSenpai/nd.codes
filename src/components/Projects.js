@@ -109,14 +109,14 @@ const Wrapper = styled.section`
       grid-template-columns: 1fr;
       grid-template-rows: repeat(5, 1fr);
       overflow-y: scroll;
-      overflow-x: hidden;
+      /* overflow-x: hidden; */
     }
     .container::-webkit-scrollbar {
       width: 1em;
     }
-    .container::-webkit-scrollbar-track {
+    /* .container::-webkit-scrollbar-track {
       box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    }
+    } */
 
     .container::-webkit-scrollbar-thumb {
       background-color: darkgrey;
@@ -130,6 +130,28 @@ const Wrapper = styled.section`
     }
     .card2 {
       grid-area: 3 / 1 / 4 / 2;
+    }
+  }
+  @media (max-width: 750px) {
+    .container {
+      width: 85%;
+      align-items: start;
+    }
+  }
+  @media (max-width: 750px) {
+    .card {
+      width: 300px;
+    }
+    .card-title {
+      font-size: 2em;
+      height: 1.25em;
+    }
+    .textarea > p {
+      font-weight: 300;
+      font-size: 1.25em;
+    }
+    .desc {
+      height: 6em;
     }
   }
 `;

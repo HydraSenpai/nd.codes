@@ -36,9 +36,12 @@ const Landing = () => {
 export default Landing;
 
 const Wrapper = styled.section`
+  width: 100%;
+  overflow-x: hidden;
   .content {
-    height: 100vh;
+    height: 80vh;
     background-color: #1c1c1c;
+    overflow-x: hidden;
   }
   .bg {
     position: absolute;
@@ -108,5 +111,72 @@ const Wrapper = styled.section`
   .button:hover {
     background-color: #0d4a6c;
     /* transform: scale(1.01); */
+  }
+  @media (max-width: 1400px) {
+    .profile {
+      left: 40%;
+      width: 50%;
+      top: 12%;
+    }
+  }
+  @media (max-width: 1100px) {
+    .bg {
+      display: none;
+    }
+    .profile {
+      /* left: 40%; */
+      width: 55%;
+      /* top: 12%; */
+    }
+  }
+  @media (max-width: 695px) {
+    .content {
+      padding-top: 2em;
+    }
+    .intro {
+      font-size: 2.5em;
+      width: 60%;
+      line-height: 1.1;
+      margin-bottom: 0.5em;
+    }
+    .desc,
+    .findme {
+      font-size: 1.25em;
+      width: 50%;
+      margin-bottom: 1em;
+    }
+    .button {
+      font-size: 20px;
+      width: 150px;
+      height: 45px;
+    }
+  }
+  @media (max-width: 500px) {
+    .content {
+      padding-top: 3.5em;
+    }
+    .text {
+      padding-left: 5%;
+    }
+    .hey {
+      font-size: 2em;
+    }
+    .intro {
+      font-size: 2.25em;
+      width: 70%;
+      line-height: 1.1;
+      margin-bottom: 0.5em;
+    }
+    .desc,
+    .findme {
+      font-size: 1.25em;
+      width: 80%;
+      margin-bottom: 1em;
+    }
+    .button {
+      font-size: 18px;
+      width: 140px;
+      height: 40px;
+    }
   }
 `;

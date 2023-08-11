@@ -160,11 +160,26 @@ const Wrapper = styled.section`
       text-align: center;
     }
     .inputs {
-      width: 80%;
+      width: 100%;
       align-items: center;
     }
     .links {
       justify-content: center;
+    }
+  }
+  @media (max-width: 700px) {
+    .card {
+      width: 85%;
+    }
+    .sections {
+      padding: 2em;
+    }
+    .inputs {
+      width: 100%;
+    }
+    .input {
+      width: 100%;
+      padding: 0em 0.25em;
     }
   }
 `;
