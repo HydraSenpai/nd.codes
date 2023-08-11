@@ -42,6 +42,7 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10em;
   .card {
     width: 60%;
     height: 65%;
