@@ -48,6 +48,7 @@ const Wrapper = styled.section`
     grid-row-gap: 2em;
     align-items: center;
     justify-items: center;
+    justify-content: center;
   }
 `;
 
