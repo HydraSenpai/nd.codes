@@ -65,6 +65,12 @@ const Wrapper = styled.div`
     width: 150px;
     justify-self: end;
   }
+  @media (max-width: 500px) {
+    .card {
+      height: 300px;
+      width: 300px;
+    }
+  }
 `;
 
 // .card {

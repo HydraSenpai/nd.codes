@@ -51,6 +51,11 @@ const Wrapper = styled.section`
     justify-items: center;
     justify-content: center;
   }
+  @media (max-width: 500px) {
+    .project-cards {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
 `;
 
 // .div4 { grid-area: 3 / 1 / 4 / 2; }
