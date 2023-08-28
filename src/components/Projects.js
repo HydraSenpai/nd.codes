@@ -56,6 +56,12 @@ const Wrapper = styled.section`
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
   }
+  @media (max-width: 350px) {
+    .card {
+      height: 250px;
+      width: 250px;
+    }
+  }
 `;
 
 // .div4 { grid-area: 3 / 1 / 4 / 2; }

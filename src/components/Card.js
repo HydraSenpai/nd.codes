@@ -71,6 +71,12 @@ const Wrapper = styled.div`
       width: 300px;
     }
   }
+  @media (max-width: 350px) {
+    .card {
+      height: 250px;
+      width: 250px;
+    }
+  }
 `;
 
 // .card {
