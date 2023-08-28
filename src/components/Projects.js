@@ -41,11 +41,13 @@ const Wrapper = styled.section`
     gap: 50px;
   }
   .project-cards {
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-column-gap: 2em;
     grid-row-gap: 2em;
+    align-items: center;
+    justify-items: center;
   }
 `;
 

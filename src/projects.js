@@ -1,6 +1,7 @@
 import classs from './assets/classessmentsqr.png';
 import ndcodes from './assets/nd.png';
 import libl from './assets/libl.png';
+import jp from './assets/jpmorganlogo.jpg';
 
 const projects = [
   {
@@ -26,6 +27,15 @@ const projects = [
     title: 'ND.CODES',
     description: 'This is my personal portfolio website built in React.',
     languages: 'React',
+    link: 'https://github.com/HydraSenpai/nd.codes',
+    linkText: 'Git page',
+  },
+  {
+    img: jp,
+    title: 'Bank API',
+    description:
+      'A fullstack bank API written in Java for my university class CS217 run by J.P. Morgan',
+    languages: 'Java',
     link: 'https://github.com/HydraSenpai/nd.codes',
     linkText: 'Git page',
   },

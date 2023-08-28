@@ -25,8 +25,8 @@ const Wrapper = styled.div`
   .card {
     border-radius: 5px;
     background-color: #353535;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     overflow: hidden;
     position: relative;
     display: flex;
