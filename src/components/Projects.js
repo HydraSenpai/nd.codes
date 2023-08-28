@@ -34,6 +34,7 @@ export default Projects;
 
 const Wrapper = styled.section`
   .container {
+    padding-top: 5em;
     background-color: #1c1c1c;
     display: flex;
     flex-direction: column;
