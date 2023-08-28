@@ -1,10 +1,18 @@
 import React from 'react';
-import { Navbar, Landing, About, Projects, Contact } from '../components/';
+import {
+  Navbar,
+  Landing,
+  About,
+  Projects,
+  Contact,
+  SideBar,
+} from '../components/';
 import styled from 'styled-components';
 
 const Home = () => {
   return (
     <Wrapper className='content'>
+      {/* <SideBar /> */}
       <Navbar />
       <Landing />
       <About />

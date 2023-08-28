@@ -3,5 +3,6 @@ import Contact from './Contact';
 import Landing from './Landing';
 import Navbar from './Navbar';
 import Projects from './Projects';
+import SideBar from './SideBar';
 
-export { Navbar, Landing, About, Projects, Contact };
+export { SideBar, Navbar, Landing, About, Projects, Contact };

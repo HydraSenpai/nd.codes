@@ -20,7 +20,7 @@ const About = () => {
             </p>
             <p>
               I’ve written web and a few application based programs mainly in
-              React + NodeJs, Java and C. I design using Figma and GIMP. I also
+              React + NodeJs, Java and C. I usually design using Figma. I also
               use other technologies and languages for personal projects.
             </p>
             <p>
